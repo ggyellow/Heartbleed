@@ -25,7 +25,7 @@ openssl req -new -x509 -days 365 -sha1 -newkey rsa:1024 \
 -subj '/O=YourCompany/OU=YourDepartment/CN=www.yoursite.com'
 ```
 
-Configure the default nginx configuration file that is located in /etc/nginx/sites-available/default by pasting the following configuration (Be sure to change the path to your certificate and key) ^[[1] Andy, “War room,” War Room, 22-May-2015. [Online]. Available: https://warroom.rsmus.com/building-a-vulnerable-box-heartbleed/. [Accessed: 12-Oct-2022].] :
+Configure the default nginx configuration file that is located in /etc/nginx/sites-available/default by pasting the following configuration (Be sure to change the path to your certificate and key) [^1] :
 ```sh
 server {
   listen 443;
@@ -87,7 +87,7 @@ Password: <input type="password" name="password">
 ```
 
 Proceed to download the following python script that will run the heartbleed vulnerability from this github repository : 
-#### *[exploit.py](exploit.py)* ^[[2] Sensepost, “Sensepost/heartbleed-POC: Test for SSL heartbeat vulnerability (CVE-2014-0160),” GitHub. [Online]. Available: https://github.com/sensepost/heartbleed-poc. [Accessed: 12-Oct-2022].]
+#### *[exploit.py](exploit.py)* [^2]
 
 To run the script, open a terminal in its directory or navigate to it using an already opened terminal and type the following command followed by the web server IP : 
 ```sh
@@ -183,5 +183,8 @@ openssl version -a
 ```
 ### Congratulations! Your machine is no longer vulnerable to heartbleed!
 ## License
+
+[^1]: [1] Andy, “War room,” War Room, 22-May-2015. [Online]. Available: https://warroom.rsmus.com/building-a-vulnerable-box-heartbleed/. [Accessed: 12-Oct-2022].
+[^2]: [2] Sensepost, “Sensepost/heartbleed-POC: Test for SSL heartbeat vulnerability (CVE-2014-0160),” GitHub. [Online]. Available: https://github.com/sensepost/heartbleed-poc. [Accessed: 12-Oct-2022].
 
 MIT
