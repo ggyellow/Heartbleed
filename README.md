@@ -87,7 +87,7 @@ Password: <input type="password" name="password">
 ```
 
 Proceed to download the following python script that will run the heartbleed vulnerability from this github repository : 
-#### *[exploit.py](exploit.py)* [^2]
+#### *[heartbleed-poc.py](heartbleed-poc.py)* [^2]
 
 To run the script, open a terminal in its directory or navigate to it using an already opened terminal and type the following command followed by the web server IP : 
 ```sh
